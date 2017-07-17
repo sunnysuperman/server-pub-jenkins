@@ -1,0 +1,5 @@
+<?jelly escape-by-default='true'?>
+
+<div>
+  This plugin is used for publishing servers on amazon or aliyun.
+</div>

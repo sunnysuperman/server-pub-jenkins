@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.jenkins-ci.plugins</groupId>
+		<artifactId>plugin</artifactId>
+		<version>2.9</version>
+	</parent>
+	<groupId>com.github.sunnysuperman</groupId>
+	<artifactId>server-pub-jenkins</artifactId>
+	<version>0.3</version>
+	<packaging>hpi</packaging>
+	<name>Server Publish Plugin</name>
+
+	<properties>
+		<jenkins.version>2.46.3</jenkins.version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+	<repositories>
+		<repository>
+			<id>jitpack.io</id>
+			<url>https://jitpack.io</url>
+		</repository>
+		<repository>
+			<id>repo.jenkins-ci.org</id>
+			<url>http://repo.jenkins-ci.org/public/</url>
+		</repository>
+	</repositories>
+	<pluginRepositories>
+		<pluginRepository>
+			<id>repo.jenkins-ci.org</id>
+			<url>http://repo.jenkins-ci.org/public/</url>
+		</pluginRepository>
+	</pluginRepositories>
+
+	<dependencies>
+<!-- 		<dependency>
+			<groupId>com.github.sunnysuperman</groupId>
+			<artifactId>server-pub</artifactId>
+			<version>0.1</version>
+		</dependency> -->
+		<dependency>
+			<groupId>com.github.sunnysuperman</groupId>
+			<artifactId>commons</artifactId>
+			<version>0.2</version>
+		</dependency>
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>fastjson</artifactId>
+			<version>1.2.28</version>
+		</dependency>
+		<dependency>
+			<groupId>com.aliyun</groupId>
+			<artifactId>aliyun-java-sdk-slb</artifactId>
+			<version>2.1</version>
+		</dependency>
+		<dependency>
+			<groupId>com.aliyun</groupId>
+			<artifactId>aliyun-java-sdk-core</artifactId>
+			<version>2.4.2</version>
+		</dependency>
+		<dependency>
+			<groupId>com.amazonaws</groupId>
+			<artifactId>aws-java-sdk-elasticloadbalancing</artifactId>
+			<version>1.11.46</version>
+		</dependency>
+	</dependencies>
+
+	<!-- <build> <plugins> skip test <plugin> <groupId>org.apache.maven.plugins</groupId> 
+		<artifactId>maven-surefire-plugin</artifactId> <version>2.19</version> <configuration> 
+		<skipTests>true</skipTests> </configuration> </plugin> </plugins> </build> -->
+</project>
